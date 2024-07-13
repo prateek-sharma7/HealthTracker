@@ -1,0 +1,18 @@
+<div id="chart" class="p-4 bg-white rounded shadow">
+  <ejs-chart
+    id="chart-container"
+    [primaryXAxis]="primaryXAxis"
+    [primaryYAxis]="primaryYAxis"
+    title="{{ chartTitle }}"
+  >
+    <e-series-collection>
+      <e-series
+        [dataSource]="data"
+        type="Column"
+        xName="userName"
+        yName="workoutMinutes"
+        name="Workout Minutes"
+      ></e-series>
+    </e-series-collection>
+  </ejs-chart>
+</div>
